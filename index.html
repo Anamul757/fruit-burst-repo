@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/30a136a041.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- style section -->
+    <style>
+       .font-lato{
+        font-family: 'Lato',sans-serif;
+       } 
+    </style>
 </head>
-<body>
-    
+<body class="font-lato">
+    <!-- nav section -->
+    <header>
+        <nav>
+            <div class="navbar bg-error rounded-lg p-2 ">
+                <div class="navbar-start">
+                  <div class="flex-1">
+                    <ul class="flex text-lg text-white gap-5">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                  </div>
+                  <img class="w-1/12" src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-white text-4xl">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                      </div>
+                </div>
+                <div class="-ml-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
