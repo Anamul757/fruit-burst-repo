@@ -35,7 +35,7 @@
 <body class="font-lato">
     <!-- nav section -->
     <header>
-        <nav>
+        <nav class="lg:block hidden">
             <div class="navbar bg-error rounded-3xl p-2 w-full  ">
                 <div class="navbar-start">
                   <div class="flex-1">
@@ -59,6 +59,28 @@
                 </div>
 
               </div>
+        </nav>
+        <nav class="sm:block lg:hidden">
+          <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <img class="w-1/12" src="images/logo.png" alt="">
+                  <h2 class="text-black text-4xl">Fruit Burst</h2>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class=" dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
         </nav>
     </header>
     <main>
@@ -135,39 +157,41 @@
           </div>
         </div>
         <!-- banner -->
-           <div class="flex w-3/4 mx-auto -mt-20 z-50 justify-center bg-white border-zinc-200 h-[195px]">
-        <div class="flex-col  ml-5">
-          <img  src="images/fruit1.png" alt="">
-          <p class="text-xl text-">Strawberry</p>
-        </div>
-        <div class="flex-col  ml-5">
-          <img  src="images/fruit2.png" alt="">
-          <p class="text-xl text-">Orange</p>
-        </div>
-        <div class="flex-col  ml-5">
-          <img  src="images/fruit3.png" alt="">
-          <p class="text-xl text-">Mango</p>
-        </div>
-        <div class="flex-col  ml-5">
-          <img src="images/fruit4.png" alt="">
-          <p class="text-xl text-">Strawberry</p>
-        </div>
-        <div class="flex-col  ml-5">
-          <img src="images/fruit5.png" alt="">
-          <p class="text-xl text-">Mango</p> 
-        </div>
-       </div>   
+           <div class="lg:block hidden">
+            <div class=" flex w-3/4 mx-auto -mt-20 z-50 justify-center bg-white border-zinc-200 h-[195px]">
+              <div class="flex-col  ml-5">
+                <img  src="images/fruit1.png" alt="">
+                <p class="text-xl text-">Strawberry</p>
+              </div>
+              <div class="flex-col  ml-5">
+                <img  src="images/fruit2.png" alt="">
+                <p class="text-xl text-">Orange</p>
+              </div>
+              <div class="flex-col  ml-5">
+                <img  src="images/fruit3.png" alt="">
+                <p class="text-xl text-">Mango</p>
+              </div>
+              <div class="flex-col  ml-5">
+                <img src="images/fruit4.png" alt="">
+                <p class="text-xl text-">Strawberry</p>
+              </div>
+              <div class="flex-col  ml-5">
+                <img src="images/fruit5.png" alt="">
+                <p class="text-xl text-">Mango</p> 
+              </div>
+             </div>   
+           </div>
       </section>
       <!-- countdown section -->
       <section>
-       <div class="flex justify-between">
+       <div class="lg:flex inline-block justify-between">
         <div>
           <h2 class="font-bold text-5xl mt-3">Deal of the day</h2>
         <p class="text-sm mt-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
           <br>
            Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div class="grid grid-cols-4 gap-5 text-center auto-cols-max">
           <div class="flex flex-col">
             <span class="countdown font-mono text-5xl">
               <span style="--value:15;"></span>:
@@ -195,9 +219,9 @@
         </div>
        </div>
        <!-- card section -->
-      <div class="flex gap-8 h-[477px]">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 ">
         <!-- card 1 -->
-        <div class="card card-compact w-96 bg-base-100 mt-5 shadow-xl">
+        <div class="card card-compact  bg-base-100 mt-5 shadow-xl">
           <figure><img src="./images/fruit6.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
@@ -236,7 +260,7 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="card card-compact w-96 bg-base-100 mt-5 shadow-xl">
+        <div class="card card-compact bg-base-100 mt-5 shadow-xl">
           <figure><img src="./images/fruit7.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
@@ -273,7 +297,7 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class="card card-compact w-96 bg-base-100 mt-5 shadow-xl">
+        <div class="card card-compact bg-base-100 mt-5 shadow-xl">
           <figure><img src="./images/fruit8.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
@@ -312,7 +336,7 @@
           </div>
         </div>
         <!-- card 4 -->
-        <div class="card card-compact w-96 bg-base-100 mt-5 shadow-xl">
+        <div class="card card-compact bg-base-100 mt-5 shadow-xl">
           <figure><img src="./images/fruit9.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
@@ -365,9 +389,10 @@
               <p class="text-sm mt-3 mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
                 <br>
                 Latin literature from 45 BC, making it over 2000 years old.</p>
-               <div class="flex">
+               <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+                <!-- 1st member -->
                 <div class="flex flex-col justify-center gap-10">
-                  <img class="w-16 h-16 rounded-full" src="images/member1.png" alt="" >
+                  <img class=" rounded-full" src="images/member1.png" alt="" >
                   <div class="flex flex-col items-center mr-2">
                    <span class="text-2xl">Awlad Hossain</span>
                    <span class="text-base">Fruits Expert</span>
@@ -378,8 +403,9 @@
                  </div>
                   </div>
                  </div>
+                 <!-- 2nd member -->
                  <div class="flex flex-col gap-10">
-                  <img class="w-16 h-16 rounded-full " src="images/member2.png" alt="" >
+                  <img class="rounded-full " src="images/member2.png" alt="" >
                   <div class="flex flex-col justify-center mr-2">
                    <span class="text-2xl">Safia Chowdhury</span>
                    <span class="text-base">Fruits Expert</span>
@@ -390,8 +416,9 @@
                    </div>
                   </div>
                  </div>
+                 <!-- 3rd member -->
                  <div class="flex flex-col gap-10">
-                  <img class="w-16 h-16 rounded-full " src="images/member3.png" alt="" >
+                  <img class="rounded-full " src="images/member3.png" alt="" >
                   <div class="flex flex-col justify-center mr-2">
                    <span class="text-2xl">Rakib Hossain</span>
                    <span class="text-base">Fruits Expert</span>
@@ -402,8 +429,9 @@
                    </div>
                   </div>
                  </div>
+                 <!-- 4th member -->
                  <div class="flex flex-col gap-10">
-                  <img class="w-16 h-16 rounded-full " src="images/member4.png" alt="" >
+                  <img class="rounded-full " src="images/member4.png" alt="" >
                   <div class="flex flex-col justify-center mr-2">
                    <span class="text-2xl">Chaity</span>
                    <span class="text-base">Fruits Expert</span>
